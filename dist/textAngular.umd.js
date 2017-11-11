@@ -4840,6 +4840,10 @@ textAngular.service('textAngularManager', ['taToolExecuteAction', 'taTools', 'ta
                         editorScope.focussed = false;
                     },
                     updateSelectedStyles: function(selectedElement){
+                        if (!editors[editorName]) {
+                            // Editor no longer exists
+                            return;
+                        }
                         // update the active state of all buttons on liked toolbars
                         angular.forEach(editors[editorName].toolbarScopes, function(toolbarScope){
                             angular.forEach(toolbarScope.tools, function(toolScope){
