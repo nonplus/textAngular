@@ -203,8 +203,8 @@ module.exports = function (grunt) {
 					amdModuleId: 'textAngular',
 					deps: {
 						'default': ['rangy'],
-						cjs: ['rangy', {'rangy/lib/rangy-selectionsaverestore': ''}],
-						amd: ['rangy', {'rangy/lib/rangy-selectionsaverestore': ''}]
+						cjs: ['rangy', {'rangy/rangy-selectionsaverestore': ''}],
+						amd: ['rangy', {'rangy/rangy-selectionsaverestore': ''}]
 					}
 				}
 			}
